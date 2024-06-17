@@ -2,7 +2,7 @@
 
 1. **Install Msys2**
 
-https://www.msys2.org/
+--- https://www.msys2.org/
 
 $ pacman -S mingw-w64-ucrt-x86_64-gcc
 
