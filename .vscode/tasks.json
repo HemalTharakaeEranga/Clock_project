@@ -1,0 +1,93 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-Wall",
+                "-Wextra",
+                "-Wpedantic",
+                "-Wshadow",
+                "-Wformat=2",
+                "-Wcast-align",
+                "-Wconversion",
+                "-Wsign-conversion",
+                "-Wnull-dereference",
+                "-g3",
+                "-O0",
+                "${workspaceFolder}/clock_gui.c",
+                "-IC:/msys64/mingw64/include/gtk-3.0",
+                "-IC:/msys64/mingw64/include/pango-1.0",
+                "-IC:/msys64/mingw64/include",
+                "-IC:/msys64/mingw64/include/harfbuzz",
+                "-IC:/msys64/mingw64/include/cairo",
+                "-IC:/msys64/mingw64/include/freetype2",
+                "-IC:/msys64/mingw64/include/pixman-1",
+                "-IC:/msys64/mingw64/include/gdk-pixbuf-2.0",
+                "-IC:/msys64/mingw64/include/libpng16",
+                "-IC:/msys64/mingw64/include/webp",
+                "-DLIBDEFLATE_DLL",
+                "-IC:/msys64/mingw64/include/atk-1.0",
+                "-IC:/msys64/mingw64/include/fribidi",
+                "-IC:/msys64/mingw64/include/glib-2.0",
+                "-IC:/msys64/mingw64/lib/glib-2.0/include",
+                "-c",
+                "-o",
+                "${workspaceFolder}/build/Debug/clock_gui.o"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Generated task by Debugger."
+        },
+        {
+            "label": "link",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "${workspaceFolder}/build/Debug/clock_gui.o",
+                "-o",
+                "${workspaceFolder}/build/Debug/clock_gui.exe",
+                "-LC:/msys64/mingw64/lib",
+                "-lgtk-3",
+                "-lgdk-3",
+                "-lz",
+                "-lgdi32",
+                "-limm32",
+                "-lshell32",
+                "-lole32",
+                "-luuid",
+                "-lwinmm",
+                "-ldwmapi",
+                "-lsetupapi",
+                "-lcfgmgr32",
+                "-lhid",
+                "-lwinspool",
+                "-lcomctl32",
+                "-lcomdlg32",
+                "-lpangowin32-1.0",
+                "-lpangocairo-1.0",
+                "-lpango-1.0",
+                "-lharfbuzz",
+                "-latk-1.0",
+                "-lcairo-gobject",
+                "-lcairo",
+                "-lgdk_pixbuf-2.0",
+                "-lgio-2.0",
+                "-lgobject-2.0",
+                "-lglib-2.0",
+                "-lintl"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "dependsOn": "build"
+        }
+    ]
+}
