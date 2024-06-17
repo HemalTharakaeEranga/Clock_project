@@ -75,3 +75,7 @@ https://www.youtube.com/live/TyFXwHklg6A?si=z2SY0HsPyWEwX_90
 https://youtu.be/YwwS-b5Xf8o?si=h67fLv3CJi_igX9z
 
 https://youtu.be/kNAMgcLaB-0?si=A5W5BVgduVsIJlrE
+
+
+![Screenshot 2024-06-16 212658](https://github.com/HemalTharakaeEranga/Clock_project/assets/156353444/e037d776-444f-490b-aa92-0f2a60d82374)
+
